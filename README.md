@@ -28,11 +28,6 @@ Customer churn represents users who stop engaging with a product or service. Ide
 - Purchase activity was one of the strongest indicators of retention
 - Risk score successfully separated high-risk vs low-risk users
 
-## Sample Visualizations
-
-![Login Frequency](images/login_frequency.png)
-![Purchases](images/purchases.png)
-
 ## Tools Used
 - Python
 - pandas
