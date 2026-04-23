@@ -1,18 +1,37 @@
 # Customer Churn Analysis
 
 ## Overview
-This project analyzes ecommerce customer behavior data to understand what patterns are associated with churn and retention.
+This project analyzes ecommerce customer behavior to understand what drives churn and how user engagement impacts retention.
 
-## Business Question
-Which customer behaviors are most strongly associated with churn, and how can those signals be used to identify at-risk users?
+## Business Context
+Customer churn represents users who stop engaging with a product or service. Identifying churn early allows companies to improve retention and reduce revenue loss.
 
-## What I Did
-- Cleaned and prepared customer data using Python
-- Removed duplicates and handled missing numeric values with median imputation
-- Compared churned and retained users across engagement and purchase metrics
-- Built visualizations for login frequency, session duration, pages per session, and purchases
-- Created a simple churn risk score based on behavioral activity
-- Explored churn patterns across customer membership length
+## Key Questions
+- What behaviors are associated with churn?
+- How do churned users differ from retained users?
+- Can we identify high-risk users using engagement data?
+
+## Approach
+- Cleaned and prepared customer dataset using Python
+- Handled missing values using median imputation
+- Compared churned vs retained users across:
+  - login frequency
+  - session duration
+  - purchase behavior
+  - engagement metrics
+- Built visualizations to analyze patterns
+- Created a churn risk score based on behavioral indicators
+
+## Key Results
+- Churned users showed lower login frequency and engagement
+- Lower session duration was strongly associated with churn
+- Purchase activity was one of the strongest indicators of retention
+- Risk score successfully separated high-risk vs low-risk users
+
+## Sample Visualizations
+
+![Login Frequency](images/login_frequency.png)
+![Purchases](images/purchases.png)
 
 ## Tools Used
 - Python
@@ -21,14 +40,13 @@ Which customer behaviors are most strongly associated with churn, and how can th
 - matplotlib
 - Jupyter Notebook
 
-## Key Insights
-- Customers who churn tend to log in less frequently
-- Lower session duration and fewer purchases are associated with higher churn
-- Engagement metrics provide useful early warning signs of retention risk
-- A simple churn risk score can help highlight users who may need re-engagement
-
 ## Limitations
-This project uses a heuristic churn risk score rather than a predictive machine learning model. A strong next step would be building and validating a churn prediction model on unseen data.
+This project uses a simple heuristic churn risk score. A next step would be building a predictive machine learning model and validating performance.
+
+## Future Improvements
+- Build churn prediction model (Logistic Regression / Random Forest)
+- Add feature importance analysis
+- Deploy as dashboard or web app
 
 ## Why It Matters
-Understanding churn helps companies identify at-risk users earlier and improve retention strategy through better engagement and targeted interventions.
+Understanding churn helps companies proactively retain users and improve product experience.
