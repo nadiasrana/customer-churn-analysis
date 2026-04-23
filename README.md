@@ -1,47 +1,29 @@
 # Customer Churn Analysis
 
 ## Overview
-This project analyzes ecommerce customer behavior to understand what drives churn and how user engagement impacts retention.
-
-## Business Context
-Customer churn represents users who stop engaging with a product or service. Identifying churn early allows companies to improve retention and reduce revenue loss.
-
-## Key Questions
-- What behaviors are associated with churn?
-- How do churned users differ from retained users?
-- Can we identify high-risk users using engagement data?
-
-## Approach
-- Cleaned and prepared customer dataset using Python
-- Handled missing values using median imputation
-- Compared churned vs retained users across:
-  - login frequency
-  - session duration
-  - purchase behavior
-  - engagement metrics
-- Built visualizations to analyze patterns
-- Created a churn risk score based on behavioral indicators
-
-## Key Results
-- Churned users showed lower login frequency and engagement
-- Lower session duration was strongly associated with churn
-- Purchase activity was one of the strongest indicators of retention
-- Risk score successfully separated high-risk vs low-risk users
+This project analyzes customer data to predict churn and identify key factors that lead to customer loss.
 
 ## Tools Used
 - Python
-- pandas
+- Pandas
 - NumPy
-- matplotlib
-- Jupyter Notebook
+- Scikit-learn
+- Matplotlib
 
-## Limitations
-This project uses a simple heuristic churn risk score. A next step would be building a predictive machine learning model and validating performance.
+## Dataset
+Customer dataset including demographics, usage patterns, and account information.
 
-## Future Improvements
-- Build churn prediction model (Logistic Regression / Random Forest)
-- Add feature importance analysis
-- Deploy as dashboard or web app
+## Key Steps
+- Data cleaning and preprocessing
+- Exploratory data analysis (EDA)
+- Feature engineering
+- Model building (logistic regression / classification)
 
-## Why It Matters
-Understanding churn helps companies proactively retain users and improve product experience.
+## Results
+- Built a predictive model to identify customers likely to churn
+- Identified key drivers such as contract type, tenure, and monthly charges
+
+## How to Run
+1. Clone the repo
+2. Open the notebook in Jupyter
+3. Run all cells
